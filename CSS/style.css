@@ -75,6 +75,77 @@ nav {
     align-items: left;
 }
 
-.hero img {
-    display: block;
+.hero-img-crop {
+    height: 15rem;
+    width: auto; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
+
+.hero-img {
+    display: block;
+    height: 20rem;
+    width: auto;
+    object-fit: cover;
+    transform-origin: 52% 80%;
+    transform: scale(2.5);
+    
+}
+
+/*About Me*/
+
+.about {
+    display: flex;
+    height: 18.75rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-content {
+    width: 40rem;
+    text-align: center;
+}
+
+/*Projects*/
+
+.projects {
+    display: grid;
+    grid-template: repeat(5, 7.25rem) / 15.625rem;
+    grid-template-areas: "h2"
+        "project"
+        "project"
+        "project"
+        "project";
+    grid-gap: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 1.875rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2 {
+    grid-area: h2;
+    text-align: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.project-card img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.project-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*left off here on this section*/
