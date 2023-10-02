@@ -1,3 +1,11 @@
+/*Color Scheme:
+    #FFF9C9
+    #86280D
+    #B5C99A
+    #F4F1E3
+    #FFC95F
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,12 +14,47 @@
 }
 
 @font-face {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    src: url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto+Mono:wght@100;200;300;400&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;   
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 }
 
 .container {
     display: flex;
     flex-direction: column;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 16.625rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    background-color: #F4F1E3;
+    padding: 0;
+    height: 4rem;
+}
+
+.nav-links {
+    display: flex;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.nav-links a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    padding: 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
