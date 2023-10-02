@@ -58,3 +58,23 @@ nav {
     font-weight: bold;
     font-style: italic;
 }
+
+/*Hero Banner*/
+
+.hero {
+    display: flex;
+    height: 18.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Arrange items in a row */
+    justify-content: space-between; /* Space between writing and image */
+    align-items: left;
+}
+
+.hero img {
+    display: block;
+}
