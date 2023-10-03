@@ -13,15 +13,16 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;   
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-}
-
 .container {
     display: flex;
     flex-direction: column;
+    background-color: #F4F1E3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* Navigation Bar */
@@ -35,7 +36,7 @@ nav {
     height: 16.625rem;
     flex-wrap: wrap;
     padding-top: 2rem;
-    background-color: #F4F1E3;
+    background-color: #B5C99A;
     padding: 0;
     height: 4rem;
 }
@@ -54,25 +55,29 @@ nav {
 
 .name {
     padding: 0 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-style: italic;
 }
 
 /*Hero Banner*/
 
 .hero {
     display: flex;
-    height: 18.75rem;
+    height: 30rem;
+    width: 60rem;
+    margin-top: 2rem;
+    padding-top: 5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: #d07e6a;
+    border-radius: 15% 30% 20% 40%;
 }
 
 .hero-content {
     display: flex;
-    flex-direction: column; /* Arrange items in a row */
-    justify-content: space-between; /* Space between writing and image */
+    flex-direction: column; 
+    justify-content: space-between; 
     align-items: left;
+    font-family: 'Rokkitt', serif;
 }
 
 .hero-img-crop {
