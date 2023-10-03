@@ -4,6 +4,7 @@
     #B5C99A
     #F4F1E3
     #FFC95F
+    #d07e6a light pastel reddish
 */
 
 * {
@@ -16,13 +17,13 @@
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #F4F1E3;
+    background: linear-gradient(336deg, #B5C99A, #F4F1E3 70.71%);
+            
 }
 
 main {
     display: flex;
     flex-direction: column;
-    
 }
 
 /* Navigation Bar */
@@ -74,8 +75,8 @@ nav {
 
 .hero-content {
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
+    flex-direction: column;
+    justify-content: space-between;
     align-items: left;
     padding-top: 5rem;
     font-family: 'Rokkitt', serif;
@@ -83,7 +84,7 @@ nav {
 
 .hero-img-crop {
     height: 15rem;
-    width: auto; 
+    width: auto;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -104,14 +105,36 @@ nav {
 .about {
     display: flex;
     height: 18.75rem;
-    align-items: center;
+    width: 100%;
     justify-content: center;
-    flex-direction: column;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.about-h2-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 6rem;
+    width: 20rem;
+    background-color: #d07e6a;
+    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
+}
+
+.about h2 {
+    font-family: 'Rokkitt', serif;
+}
+
+.about p {
+    width: 30rem; /*LEFT OFF HERE REMEMBER TO READJUST FORMAT FOR ABOUT TO BE LOWER*/
 }
 
 .about-content {
-    width: 40rem;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  align-items: start;
 }
 
 /*Projects*/
@@ -173,7 +196,7 @@ nav {
     height: 100%;
 }
 
-.skills-img{
+.skills-img {
     height: 1rem;
     width: auto;
 }
