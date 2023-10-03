@@ -148,4 +148,61 @@ nav {
     flex-direction: column;
 }
 
-/*left off here on this section*/
+/*Skills*/
+
+.skills {
+    width: auto;
+    height: 9rem;
+}
+
+.skills h2 {
+    text-align: center;
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.skills-img{
+    height: 1rem;
+    width: auto;
+}
+
+/*Magic 8 Ball Portion*/
+
+.magic-8-ball {
+    height: 9rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.magic-8-ball p {
+    text-align: center;
+}
+
+.magic-8-ball button {
+    width: 5rem;
+}
+
+.answer {
+    background-color: #FFF9C9;
+    height: 50%;
+    width: 9rem;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    padding: 1rem;
+    justify-content: left;
+    font-size: .75rem;
+    background-color: #B39878;
+}
