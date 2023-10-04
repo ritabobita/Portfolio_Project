@@ -1,11 +1,13 @@
 /*Color Scheme:
-    #FFF9C9
-    #86280D
-    #B5C99A
-    #F4F1E3
-    #FFC95F
+    #FFF9C9 brighter neonish-feel cream
+    #86280D dark red brown
+    #B5C99A green
+    #F4F1E3 cream
+    #FFC95F yellow
     #d07e6a light pastel reddish
 */
+
+/*Add Raleway font*/
 
 * {
     box-sizing: border-box;
@@ -18,13 +20,21 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(336deg, #B5C99A, #F4F1E3 70.71%);
-            
 }
 
 main {
     display: flex;
     flex-direction: column;
 }
+
+.background-container1 {
+    background-image: url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/green_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/yellow_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/brown-blob.svg');
+    background-position: right bottom, left top, left bottom; 
+    background-repeat: no-repeat, no-repeat, no-repeat; 
+      padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
 
 /* Navigation Bar */
 
@@ -128,12 +138,12 @@ nav {
 
 .about p {
     width: 30rem; /*LEFT OFF HERE REMEMBER TO READJUST FORMAT FOR ABOUT TO BE LOWER*/
+    padding: 3rem 0 0 3rem;
 }
 
 .about-content {
   display: flex;
   flex-direction: row;
-  align-content: space-evenly;
   align-items: start;
 }
 
