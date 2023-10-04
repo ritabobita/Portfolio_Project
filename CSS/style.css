@@ -7,7 +7,10 @@
     #d07e6a light pastel reddish
 */
 
-/*Add Raleway font*/
+/*Fonts:
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rokkitt', serif; 
+*/
 
 * {
     box-sizing: border-box;
@@ -62,10 +65,14 @@ nav {
     padding: 0 1rem;
     text-decoration: none;
     color: black;
+    font-family: 'Raleway', sans-serif;
 }
 
 .name {
     padding: 0 1rem;
+    font-family: 'Rokkitt', serif; 
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /*Hero Banner*/
@@ -133,7 +140,7 @@ nav {
 }
 
 .about h2 {
-    font-family: 'Rokkitt', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .about p {
@@ -165,9 +172,23 @@ nav {
     align-items: center;
 }
 
+.projects-h2-div {
+    display: flex;
+    grid-area: h2;
+    height: 6rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    background-color: #d07e6a;
+    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
+}
+
 .projects h2 {
     grid-area: h2;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .project-card {
@@ -190,20 +211,35 @@ nav {
 /*Skills*/
 
 .skills {
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
     width: auto;
-    height: 9rem;
+    height: 20rem;
+}
+
+.skills-h2-div {
+    display: flex;
+    height: 6rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    background-color: #d07e6a;
+    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
 }
 
 .skills h2 {
     text-align: center;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 .skills-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
+    height: 50%;
 }
 
 .skills-img {
@@ -214,7 +250,7 @@ nav {
 /*Magic 8 Ball Portion*/
 
 .magic-8-ball {
-    height: 9rem;
+    height: 20rem;
     width: auto;
     display: flex;
     justify-content: center;
@@ -243,5 +279,4 @@ footer {
     padding: 1rem;
     justify-content: left;
     font-size: .75rem;
-    background-color: #B39878;
 }
