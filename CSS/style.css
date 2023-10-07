@@ -12,6 +12,17 @@
     font-family: 'Rokkitt', serif; 
 */
 
+/*
+Left off on project formatting, 
+- add design tweaks where needed maybe play with border radius, sizing, gaps, etc. in projects section - done
+- add links to projects --> add to title of projects, when adding to image it shifts the size, while preferable up to you if u want to figure it out later
+-- https://ritabobita.github.io/Tea-Cozy/ //  https://github.com/ritabobita/The-Fiscal-Code // https://ritabobita.github.io/Ritka-Iteration-1/ // https://ritabobita.github.io/Ceramics-Club/ 
+- rewrite the hero wording - done
+- lift the svgs higher especially the green blob - done
+- look into doing the javascript (may need to review)
+- contact page
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,13 +42,13 @@ main {
 }
 
 .background-container1 {
-    background-image: url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/green_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/yellow_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/brown-blob.svg');
-    background-position: right bottom, left top, left bottom; 
-    background-repeat: no-repeat, no-repeat, no-repeat; 
-      padding: 15px;
+    background-image: url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/yellow_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/green_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/brown-blob.svg');
+    background-position: top, center, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-  }
+}
 
 /* Navigation Bar */
 
@@ -70,7 +81,7 @@ nav {
 
 .name {
     padding: 0 1rem;
-    font-family: 'Rokkitt', serif; 
+    font-family: 'Rokkitt', serif;
     font-size: 2rem;
     font-weight: 300;
 }
@@ -121,7 +132,7 @@ nav {
 
 .about {
     display: flex;
-    height: 18.75rem;
+    height: 24rem;
     width: 100%;
     justify-content: center;
     align-items: start;
@@ -132,7 +143,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    align-self: flex-start;
     height: 6rem;
     width: 20rem;
     background-color: #d07e6a;
@@ -145,33 +156,34 @@ nav {
 }
 
 .about p {
-    width: 30rem; /*LEFT OFF HERE REMEMBER TO READJUST FORMAT FOR ABOUT TO BE LOWER*/
+    width: 30rem;
     padding: 3rem 0 0 3rem;
+    font-family: 'Rokkitt', serif;
 }
 
 .about-content {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
 }
 
 /*Projects*/
 
 .projects {
     display: grid;
-    grid-template: repeat(5, 15rem) / 45rem; /*Make these bigger in width and height, and 
-    add diff background colors for pic side and written side*/
+    grid-template: 6rem repeat(4, 18.05rem) / 45rem;
     grid-template-areas: "h2"
         "project"
         "project"
         "project"
         "project";
-    grid-gap: 1rem;
+    grid-gap: 2.75rem;
     width: 100%;
     height: auto;
     padding: 1.875rem;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .projects-h2-div {
@@ -196,19 +208,49 @@ nav {
 .project-card {
     display: flex;
     flex-direction: row;
-    height:100%;
+    height: 100%;
     justify-content: space-between;
     background-color: #F4F1E3;
+    border-radius: 0.625rem;
+}
+
+.project-card h5 {
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.role {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.project-card ul {
+    padding-left: 3rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .project-card img {
-    height: 100%
+    height: 100%;
+    width: 50%;
+}
+
+.img-left {
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+
+.img-right {
+    border-radius: 0 0.625rem 0.625rem 0;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    justify-content: start;
 }
 
 /*Skills*/
@@ -244,12 +286,19 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 50%;
+    margin-top: 2.5rem;
+    height: 9rem;
 }
 
 .skills-img {
-    height: 1rem;
+    height: 5rem;
     width: auto;
+}
+
+.css-img {
+    width: 4.3rem;
+    height: 6rem;
+    margin-bottom: 1.1rem;
 }
 
 /*Magic 8 Ball Portion*/
@@ -263,18 +312,35 @@ nav {
     flex-direction: column;
 }
 
-.magic-8-ball p {
+.magic-h3-div {
+    display: flex;
+    height: 6rem;
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    background-color: #FFF9C9;
+    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
+    border: 1px solid black;
+    margin:1rem;
+}
+
+.magic-8-ball h3 {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .magic-8-ball button {
-    width: 5rem;
+    width: 6rem;
+    height: 2rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .answer {
     background-color: #FFF9C9;
-    height: 50%;
-    width: 9rem;
+    height: 25%;
+    width: 15rem;
 }
 
 /*Footer*/
@@ -283,5 +349,6 @@ footer {
     display: flex;
     padding: 1rem;
     justify-content: left;
-    font-size: .75rem;
+    font-size: 1rem;
+    font-family: 'Rokkitt', serif; 
 }
