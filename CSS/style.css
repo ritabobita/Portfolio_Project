@@ -15,12 +15,12 @@
 /*
 Left off on project formatting, 
 - add design tweaks where needed maybe play with border radius, sizing, gaps, etc. in projects section - done
-- add links to projects --> add to title of projects, when adding to image it shifts the size, while preferable up to you if u want to figure it out later
--- https://ritabobita.github.io/Tea-Cozy/ //  https://github.com/ritabobita/The-Fiscal-Code // https://ritabobita.github.io/Ritka-Iteration-1/ // https://ritabobita.github.io/Ceramics-Club/ 
+- add links to projects - done
 - rewrite the hero wording - done
 - lift the svgs higher especially the green blob - done
 - look into doing the javascript (may need to review)
 - contact page
+- spell and grammar check at the end
 */
 
 * {
@@ -223,6 +223,10 @@ nav {
     font-family: 'Raleway', sans-serif;
 }
 
+.project-card a {
+    display: contents;
+}
+
 .role {
     font-weight: lighter;
     font-style: italic;
@@ -331,16 +335,19 @@ nav {
     font-family: 'Raleway', sans-serif;
 }
 
-.magic-8-ball button {
+#click-here {
     width: 6rem;
     height: 2rem;
     margin: 0 1rem 1rem 1rem;
+    cursor: pointer;
 }
 
-.answer {
+#answer {
     background-color: #FFF9C9;
     height: 25%;
     width: 15rem;
+    display: none;  /*DISPLAY HERE IS NONE TO SEE OUTPUT UNDO/ERASE MAY NEED TO ADJUST INNERHTML HERE I set a p tag inside
+    which may be needed to display one of the strings from the array*/
 }
 
 /*Footer*/
