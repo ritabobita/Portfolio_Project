@@ -1,3 +1,128 @@
+/*Color Scheme:
+    #FFF9C9 brighter neonish-feel cream
+    #86280D dark red brown
+    #B5C99A green
+    #F4F1E3 cream
+    #FFC95F yellow
+    #d07e6a light pastel reddish
+*/
+
+/*Fonts:
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rokkitt', serif; 
+*/
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(336deg, #B5C99A, #F4F1E3 70.71%);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background-container1 {
+    background-image: url('../SVG/contact_blob.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 16.625rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  background-color: #B5C99A;
+  padding: 0;
+  height: 4rem;
+}
+
+#home-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  padding: 0 1rem;
+  font-family: 'Rokkitt', serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/*Main Content*/
+
+.contact-container {
+  display: grid;
+  grid-template-rows: repeat(3, 10rem);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-self: baseline;
+}
+
+.contact-img {
+  height: 4rem;
+  width: auto;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  align-self: flex-end;
+}
+
+.contact-container p {
+  font-family: 'Rokkitt', serif; 
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: left;
+  font-size: 1.3rem;
+  font-family: 'Rokkitt', serif;
+}

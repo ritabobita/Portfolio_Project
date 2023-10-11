@@ -18,7 +18,7 @@ Left off on project formatting,
 - add links to projects - done
 - rewrite the hero wording - done
 - lift the svgs higher especially the green blob - done
-- look into doing the javascript (may need to review)
+- look into doing the javascript (may need to review) - done
 - contact page
 - spell and grammar check at the end
 */
@@ -42,7 +42,7 @@ main {
 }
 
 .background-container1 {
-    background-image: url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/yellow_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/green_blob.svg'), url('/Users/ritarosiek/Projects/Portfolio_Project/SVG/brown-blob.svg');
+    background-image: url('../SVG/yellow_blob.svg'), url('../SVG/green_blob.svg'), url('../SVG/brown-blob.svg');
     background-position: top, center, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
     padding: 15px;
