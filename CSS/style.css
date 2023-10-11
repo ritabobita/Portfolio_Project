@@ -79,6 +79,10 @@ nav {
     font-family: 'Raleway', sans-serif;
 }
 
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 .name {
     padding: 0 1rem;
     font-family: 'Rokkitt', serif;
@@ -308,7 +312,8 @@ nav {
 /*Magic 8 Ball Portion*/
 
 .magic-8-ball {
-    height: 20rem;
+    height: 38rem;
+    margin: 2rem;
     width: auto;
     display: flex;
     justify-content: center;
@@ -318,8 +323,8 @@ nav {
 
 .magic-h3-div {
     display: flex;
-    height: 6rem;
-    width: 30rem;
+    height: 10rem;
+    width: 50rem;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -327,36 +332,86 @@ nav {
     background-color: #FFF9C9;
     border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
     border: 1px solid black;
-    margin:1rem;
+    margin: 1rem;
 }
 
 .magic-8-ball h3 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color:#505050;
+    line-height: 3rem;
+    word-spacing: .5rem;
+}
+
+.magic-8-ball h3 span {
+    font-weight: 400;
+    word-spacing: 0rem;
+    font-style: italic;
 }
 
 #click-here {
-    width: 6rem;
-    height: 2rem;
-    margin: 0 1rem 1rem 1rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 5%;
+    background-color: #FFF9C9;
+    font-family: 'Rokkitt', serif; 
+    margin: 2rem;
+    font-size: 1.4rem;
+}
+
+#click-here:hover {
+    background-color: #B5C99A;
+}
+
+#click-here:active {
+    background-color: #93a182;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        transform: translateY(4px);
 }
 
 #answer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF9C9;
-    height: 25%;
-    width: 15rem;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
     font-weight: bold;
-    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
+    border-radius: 15px;
+    height: 6rem;
+    width: 15rem;
+    background-color: #FFF9C9;
+    text-align: center;
+}
+
+.contact-button {
+    display: flex;
+    height: 4rem;
+    width: 14rem;
+    margin-top: 5rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d07e6a;
+    cursor: pointer;
+}
+
+.contact-button:active {
+    background-color: #b46e5d;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transform: translateY(4px);
+}
+
+.magic-8-ball a {
+    text-decoration: none;
 }
 
 .contact {
-    padding-top: 3rem;
+    color: black;
+    font-family: 'Rokkitt', serif; 
+    font-size: 1.5rem;
+    
 }
 
 /*Footer*/
@@ -365,6 +420,6 @@ footer {
     display: flex;
     padding: 1rem;
     justify-content: left;
-    font-size: 1rem;
-    font-family: 'Rokkitt', serif; 
+    font-size: 1.3rem;
+    font-family: 'Rokkitt', serif;
 }

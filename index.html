@@ -19,10 +19,10 @@
         <nav>
             <p class="name">Rita Rosiek</p>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#">About Me</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">Skills</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#about-me">About Me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -39,7 +39,7 @@
                     </div>
                 </section>
 
-                <section class="about">
+                <section class="about" id="about-me">
                     <div class="about-content">
                         <div class="about-h2-div">
                             <h2>About Me</h2>
@@ -65,7 +65,7 @@
                     </div>
                 </section>
 
-                <section class="projects">
+                <section class="projects" id="projects">
                     <div class="projects-h2-div">
                         <h2>Projects</h2>
                     </div>
@@ -133,7 +133,7 @@
                     </div>
                 </section>
 
-                <section class="skills">
+                <section class="skills" id="skills">
                     <div class="skills-h2-div">
                         <h2>Skills</h2>
                     </div>
@@ -149,13 +149,14 @@
 
                 <section class="magic-8-ball">
                     <div class="magic-h3-div">
-                        <h3>Now ask yourself this:<br>Should I hire Rita?</h3>
+                        <h3>Now ask yourself this:<br><span>Should I hire Rita?</span></h3>
                     </div>
-                    <button id="click-here" type = "button" >Click Here</button>
+                    <button id="click-here" type = "button" >Click Here For An Answer</button>
                     <div id="answer">
                     </div>
-                    <a href="contact.html"><h4 class="contact">Contact Me Here</h4></a>
-                    <!-- Include a link to the contact page here -->
+                    <a href="contact.html"><button class="contact-button" type = "button">
+                    <h4 class="contact">Contact Me Here!</h4>
+                    </button></a>
                 </section>
             </div>
         </main>
