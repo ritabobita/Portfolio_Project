@@ -340,14 +340,23 @@ nav {
     height: 2rem;
     margin: 0 1rem 1rem 1rem;
     cursor: pointer;
+    border-radius: 5%;
 }
 
 #answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFF9C9;
     height: 25%;
     width: 15rem;
-    display: none;  /*DISPLAY HERE IS NONE TO SEE OUTPUT UNDO/ERASE MAY NEED TO ADJUST INNERHTML HERE I set a p tag inside
-    which may be needed to display one of the strings from the array*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 29% 91% 40% 77% / 46% 73% 55% 81%;
+}
+
+.contact {
+    padding-top: 3rem;
 }
 
 /*Footer*/
