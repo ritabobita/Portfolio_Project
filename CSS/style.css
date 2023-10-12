@@ -66,6 +66,11 @@ nav {
     height: 4rem;
 }
 
+#home-link {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-links {
     display: flex;
     padding: 1rem;
@@ -130,6 +135,10 @@ nav {
     object-fit: cover;
     transform-origin: 52% 80%;
     transform: scale(2.5);
+}
+
+@media only screen and (max-width: 961px) and (orientation: portrait) {
+
 }
 
 /*About Me*/

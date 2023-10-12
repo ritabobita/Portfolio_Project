@@ -12,6 +12,9 @@
     font-family: 'Rokkitt', serif; 
 */
 
+/*FIGURE OUT HOW TO INCREASE SIZE OF SVG OR ENTIRE CONTACT CONTENT SO THAT THE BACKGROUND IS BETTER ENLARGED, idk 
+could also switch grid to flexbox maybe add 39.188rem to background container1 idk*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,20 +25,22 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(336deg, #B5C99A, #F4F1E3 70.71%);
+  justify-content: space-between;
   height: 100vh;
+  background: linear-gradient(336deg, #B5C99A, #F4F1E3 70.71%);
 }
 
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .background-container1 {
     background-image: url('../SVG/contact_blob.svg');
     background-position: top;
     background-repeat: no-repeat;
+    height: 70vh;
+    margin-top: 3rem;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -90,10 +95,13 @@ nav {
 
 .contact-container {
   display: grid;
-  grid-template-rows: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 7rem);
+  grid-template-columns: 20rem;
   justify-content: center;
   justify-items: center;
   align-items: center;
+  align-content: center;
+  margin-top: 2rem;
 }
 
 .contact-links {
@@ -106,15 +114,20 @@ nav {
 .contact-img {
   height: 4rem;
   width: auto;
+  margin: 1rem;
+  border-radius: 5px;
 }
+
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  align-self: flex-end;
+  align-self: end;
 }
 
 .contact-container p {
   font-family: 'Rokkitt', serif; 
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /*Footer*/
