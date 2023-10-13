@@ -12,9 +12,6 @@
     font-family: 'Rokkitt', serif; 
 */
 
-/*FIGURE OUT HOW TO INCREASE SIZE OF SVG OR ENTIRE CONTACT CONTENT SO THAT THE BACKGROUND IS BETTER ENLARGED, idk 
-could also switch grid to flexbox maybe add 39.188rem to background container1 idk*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,6 +41,13 @@ main {
     padding: 15px;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 961px) and (min-width: 768px) {
+  .background-container1 {
+    height: 80vh;
+    margin: 0;
+  }
 }
 
 /* Navigation Bar */
