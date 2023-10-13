@@ -19,7 +19,7 @@ Left off on project formatting,
 - rewrite the hero wording - done
 - lift the svgs higher especially the green blob - done
 - look into doing the javascript (may need to review) - done
-- contact page
+- contact page - done
 - spell and grammar check at the end
 */
 
@@ -50,6 +50,12 @@ main {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 480px) {
+    .container {
+        background: linear-gradient(336deg, #B5C99A, #F4F1E3 95%);
+    }
+}
+
 /* Navigation Bar */
 
 nav {
@@ -58,7 +64,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 16.625rem;
     flex-wrap: wrap;
     padding-top: 2rem;
     background-color: #B5C99A;
@@ -93,6 +98,33 @@ nav {
     font-family: 'Rokkitt', serif;
     font-size: 2rem;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        height: 6rem;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .nav-links {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    nav {
+        height: 6rem;
+        flex-direction: column;
+        padding-top: 0;
+        justify-content: space-evenly;
+    }
+
+    .nav-links {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 /*Hero Banner*/
@@ -163,6 +195,32 @@ nav {
     }
 }
 
+@media only screen and (max-width: 480px) {
+
+.hero {
+    height: 10rem;
+    width: 20rem;
+    padding-bottom: 1rem;
+}
+
+.hero-img-crop {
+    display: none;
+}
+
+.hero-img {
+    display: none;
+}
+
+.hero-content {
+    padding-top: 0;
+}
+
+.hero-content p {
+    width: 12rem;
+}
+
+}
+
 /*About Me*/
 
 .about {
@@ -221,6 +279,31 @@ nav {
 
     .about p {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about {
+        align-items: center;
+        height: 33rem;
+        margin-top: 3.5rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: 100%;
+        width: auto;
+        justify-content: space-evenly;
+    }
+
+    .about-h2-div {
+        align-self: center;
+    }
+
+    .about p {
+        padding: 0;
+        margin-top: 1.5rem;
+        width: 20rem;
     }
 }
 
@@ -340,6 +423,50 @@ nav {
 
 }
 
+@media only screen and (max-width: 480px) {
+
+    .projects {
+        grid-template: 6rem repeat(4, 30rem) / 20rem;
+        grid-template-areas:
+            "h2"
+            "project"
+            "project"
+            "project"
+            "project";
+        gap: 1.6rem;
+    }
+
+    .column-card {
+        flex-direction: column;
+    }
+
+    .column-reverse-card {
+        flex-direction: column-reverse;
+    }
+
+    .project-card img {
+        height: auto;
+        width: auto;
+        border-radius: 0 0 0.625rem 0.625rem;
+    }
+
+    .img-left, .img-right {
+        border-radius: 0;
+    }
+
+    .project-card h5 {
+        font-size: 1.4rem;
+    }
+
+    .project-card p {
+        font-size: .92rem;
+    }
+
+    .project-card ul {
+        font-size: .92rem;
+    }
+}
+
 /*Skills*/
 
 .skills {
@@ -397,6 +524,30 @@ nav {
     .skills-container {
         flex-wrap: wrap;
         height: 13rem;
+    }
+
+    .skills-img {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .git-hub-img {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .skills {
+        height: 35rem;
+        padding: 0;
+        margin-top: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .skills-container {
+        flex-wrap: wrap;
+        height: 26rem;
+        margin-top: 1.5rem;
     }
 
     .skills-img {
@@ -522,6 +673,20 @@ nav {
     .magic-8-ball h3 {
         font-size: 1.8rem;
         word-spacing: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .magic-h3-div {
+        height: 8rem;
+        width: 20rem;
+    }
+
+    .magic-8-ball h3 {
+        font-size: 1.4rem;
+        word-spacing: 0;
+        line-height: 2rem;
     }
 }
 
