@@ -50,6 +50,14 @@ main {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .background-container1 {
+    height: 80vh;
+
+    margin: 0;
+  }
+}
+
 /* Navigation Bar */
 
 nav {
@@ -95,6 +103,32 @@ nav {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 480px) {
+  nav {
+      height: 6rem;
+      flex-direction: column;
+      padding-top: 1rem;
+  }
+
+  .nav-links {
+      padding: 0 0 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  nav {
+      flex-direction: column;
+      padding-top: 0;
+      justify-content: space-evenly;
+  }
+
+  .nav-links {
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+}
+
 /*Main Content*/
 
 .contact-container {
@@ -132,6 +166,17 @@ h1 {
   font-family: 'Rokkitt', serif; 
   font-size: 1.2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+.contact-links {
+  flex-wrap: wrap;
+}
+
+.github-img {
+  margin: 1rem 0 0 0;
+}
 }
 
 /*Footer*/
