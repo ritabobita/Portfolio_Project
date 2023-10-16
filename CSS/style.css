@@ -12,17 +12,6 @@
     font-family: 'Rokkitt', serif; 
 */
 
-/*
-Left off on project formatting, 
-- add design tweaks where needed maybe play with border radius, sizing, gaps, etc. in projects section - done
-- add links to projects - done
-- rewrite the hero wording - done
-- lift the svgs higher especially the green blob - done
-- look into doing the javascript (may need to review) - done
-- contact page - done
-- spell and grammar check at the end
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
